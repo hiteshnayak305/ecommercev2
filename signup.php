@@ -2,14 +2,15 @@
 <html>
   <head>
     <title>Lifestyle Store | Sign Up</title>
-      <!-- bootstrtap stylesheets-       -->
-      <link rel="stylesheet" type="text/css" href="bootstrap_offline/css/bootstrap.min.css"/>
-      <link rel="stylesheet" type="text/css" href="bootstrap_offline/css/bootstrap-theme.min.css"/>
-      <!-- bootstrap scripts-    --->
-      <script type="text/javascript" src="bootstrap_offline/js/jquery-3.1.1.min.js"></script>
-      <script type="text/javascript" src="bootstrap_offline/js/bootstrap.min.js"></script>
-      <!-- custom stylesheets-      -->
-      <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrtap stylesheets-       -->
+    <link rel="stylesheet" type="text/css" href="http://localhost/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="http://localhost/bootstrap/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css"/>
+    <!-- bootstrap scripts-    --->
+    <script type="text/javascript" src="http://localhost/bootstrap/jquery-3.2.1/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="http://localhost/bootstrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- custom stylesheets-      -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
   </head>
 
   <body>
@@ -37,27 +38,26 @@
     <main class="padtop">
       <div class="container form_container">
           <h2>SIGN UP</h2>
-          <form class="" action="#" method="post">
+          <form  action="includes/signup_script.php" method="post">
             <div class="form-group">
-              <input type="text" class="form-control" id="" placeholder="Name">
+              <input type="text" class="form-control" name="name" placeholder="Name">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" id="" placeholder="Email">
+              <input type="email" class="form-control" name="email" placeholder="Email">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" id="" placeholder="Password">
+              <input type="password" class="form-control" name="password" placeholder="Password">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" id="" placeholder="Contact">
+              <input type="text" class="form-control" name="contact" placeholder="Contact">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" id="" placeholder="City">
+              <input type="text" class="form-control" name="city" placeholder="City">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" id="" placeholder="Address">
+              <input type="text" class="form-control" name="address" placeholder="Address">
             </div>
             <button type="submit" class="btn btn-primary">Sign Up</button>
-            <button type="reset" class="btn btn-primary">Reset</button>
           </form>
       </div>
     </main>
