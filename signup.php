@@ -1,3 +1,9 @@
+<?php
+  require 'includes/dbconnect.php';
+  if (isset($_SESSION['email'])) {
+    header("Location: http://localhost/ecommercev2/product.php");
+  }
+ ?>
 <!DOCTYPE html>
 <html>
   <head>

@@ -1,6 +1,8 @@
 <?php
-  require 'includes/session_init.php';
-  require 'includes/session_check_index.php';
+  require 'includes/dbconnect.php';
+  if (isset($_SESSION['email'])) {
+    header("Location: http://localhost/ecommercev2/product.php");
+  }
  ?>
 <!DOCTYPE html>
 <html>

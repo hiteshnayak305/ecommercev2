@@ -21,8 +21,12 @@
     $query = "INSERT INTO users (name, email, password, contact, city, address) VALUES ('$name','$email','$enc_password','$contact','$city','$address')";
     //execute query
     $query_status = mysqli_query($connection,$query) or die('unable to insert!!!');
-    //redirect to login page
-    $link = "http://localhost/ecommercev2/login.php?email=".$email;
-    header("Location: $link");
+    //login user set session
+    $id = mysqli_insert_id($connection);
+    $_SESSION['id'] = $id;
+    $_SESSION['email'] = $email;
+    $_SESSION['name'] = $name;
+    //redirect to product page
+    header("Location: http://localhost/ecommercev2/product.php");
   }
  ?>
