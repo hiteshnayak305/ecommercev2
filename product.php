@@ -24,7 +24,7 @@
      ?>
 
     <!--       main body      -->
-    <main class="padtop">
+    <main>
       <div class="container">
         <div class="jumbotron">
           <h1>Welcome to our Lifestyle Store!</h1>

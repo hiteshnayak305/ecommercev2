@@ -25,7 +25,7 @@
       require 'includes/navigation.php';
      ?>
     <!--       main body      -->
-    <main class="padtop">
+    <main>
       <div class="container form_container">
         <table class="table">
           <thead>

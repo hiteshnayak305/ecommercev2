@@ -7,7 +7,7 @@
  <!DOCTYPE html>
  <html>
    <head>
-     <title>Lifestyle Store | Cart</title>
+     <title>Lifestyle Store | Success</title>
  	   <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- bootstrtap stylesheets-       -->
       <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
@@ -24,7 +24,7 @@
      <?php
        require 'includes/navigation.php';
       ?>
-    <main class="padtop">
+    <main>
       <?php
         $id = $_GET['id'];
         $user_id = $_SESSION['id'];

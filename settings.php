@@ -25,7 +25,7 @@
       require 'includes/navigation.php';
      ?>
     <!--       main body      -->
-    <main class="padtop">
+    <main>
       <div class="container form_container">
           <h2>Change Password</h2>
           <form action="includes/settings_script.php" method="post">

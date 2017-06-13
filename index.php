@@ -26,12 +26,18 @@
 
     <!--       main body      -->
     <main>
-      <div id="banner">
-        <div class="container" id="banner_content">
-            <h2>We sell lifestyle.</h2>
-            <p>Flat 40% OFF on premium brands</p>
-            <a class="btn btn-info btn-lg active" href="product.php"><strong>Shop Now</strong></a>
-        </div>
+      <div id="banner" class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div id="banner_content" class="jumbotron">
+              <h1>We sell lifestyle.</h1>
+              <p class="lead">Flat 40% OFF on premium brands</p><br>
+              <p class="lead">
+                <a class="btn btn-info btn-lg" href="product.php" role="button"><strong>Shop Now!</strong></a>
+              </p>
+            </div>
+          </div><!---  col   -->
+        </div><!---   row   ---->
       </div>
     </main>
     <!--     footer     ---->

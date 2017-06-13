@@ -26,30 +26,34 @@
      ?>
 
     <!--       main body      -->
-    <main class="padtop">
-      <div class="container form_container">
-          <h2>SIGN UP</h2>
-          <form  action="includes/signup_script.php" method="post">
-            <div class="form-group">
-              <input type="text" class="form-control" name="name" placeholder="Name">
+    <main>
+      <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 form_container">
+              <h2>SIGN UP</h2>
+              <form  action="includes/signup_script.php" method="post">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" name="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="contact" placeholder="Contact">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="city" placeholder="City">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="address" placeholder="Address">
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+              </form>
             </div>
-            <div class="form-group">
-              <input type="email" class="form-control" name="email" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" name="password" placeholder="Password">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="contact" placeholder="Contact">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="city" placeholder="City">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="address" placeholder="Address">
-            </div>
-            <button type="submit" class="btn btn-primary">Sign Up</button>
-          </form>
+          </div>
       </div>
     </main>
     <!--     footer     ---->
