@@ -41,7 +41,7 @@
               <tbody>
                 <?php
                   $user_id = $_SESSION['id'];
-                  $query = "SELECT * FROM user_items INNER JOIN items ON user_items.item_id = items.id";
+                  $query = "SELECT * FROM user_items INNER JOIN items ON user_items.item_id = items.id AND status='Added to cart'";
                   $result = mysqli_query($connection, $query) or die("can't fetch!!!");
                   if (mysqli_num_rows($result) < 1) {  ?>
                     <tr>
