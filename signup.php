@@ -35,14 +35,14 @@
                 <div class="form-group">
                   <input type="text" class="form-control" name="name" placeholder="Name" required>
                 </div>
-                <div class="form-group">
+                <div class="form-group <?php if($_GET['err'] == "already_exist"){echo "has-warning";}?>">
                   <input type="email" class="form-control" name="email" placeholder="Email" required>
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control" name="password" placeholder="Password" required>
+                  <input type="password" class="form-control" name="password" placeholder="Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="contact" placeholder="Contact">
+                  <input type="text" class="form-control" name="contact" pattern="^[0-9]{10}$" placeholder="Contact" required>
                 </div>
                 <div class="form-group">
                   <input type="text" class="form-control" name="city" placeholder="City">

@@ -37,10 +37,10 @@
               <div class="panel-body">
                 <p class="text-warning">Login to make a purchase</p>
                 <form action="includes/login_script.php" method="post">
-                  <div class="form-group">
+                  <div class="form-group <?php if($_GET['err'] == "no_user"){echo "has-warning";}?>">
                     <input type="email" class="form-control" name="email" placeholder="Email" required>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group <?php if($_GET['err'] == "no_pass"){echo "has-error";}?>">
                     <input type="password" class="form-control" name="password" placeholder="Password" required>
                   </div>
                   <button type="submit" name="button" class="btn btn-primary">Login</button>

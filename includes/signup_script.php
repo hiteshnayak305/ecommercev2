@@ -5,8 +5,16 @@
   $name = mysqli_escape_string($connection,$_POST['name']);
   $email = mysqli_real_escape_string($connection,$_POST['email']);
   $password = mysqli_real_escape_string($connection,$_POST['password']);
+  $pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$";
+  if (!preg_match($pattern, $password, $arr)) {
+    header("Location: http://localhost/ecommercev2/signup.php?err=no_format_pass");
+  }
   $enc_password = md5($password);
   $contact = mysqli_real_escape_string($connection,$_POST['contact']);
+  $pattern = "^[0-9]{10}$";
+  if (!preg_match($pattern, $contact, $arr)) {
+    header("Location: http://localhost/ecommercev2/settings.php?err=no_format_contact");
+  }
   $city = mysqli_real_escape_string($connection,$_POST['city']);
   $address = mysqli_real_escape_string($connection,$_POST['address']);
 

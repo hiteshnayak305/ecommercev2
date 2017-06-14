@@ -3,6 +3,10 @@
   $old_password = mysqli_real_escape_string($connection,$_POST['opassword']);
   $md5_password = md5($old_password);
   $new_password1 = mysqli_real_escape_string($connection,$_POST['npassword1']);
+  $pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$";
+  if (!preg_match($pattern, $new_password1, $arr)) {
+    header("Location: http://localhost/ecommercev2/settings.php?err=no_format");
+  }
   $new_password2 = mysqli_real_escape_string($connection,$_POST['npassword2']);
   //create query
   $email = $_SESSION['email'];
@@ -22,5 +26,4 @@
   } else {
     header("Location: http://localhost/ecommercev2/settings.php?err=wrong_pass");
   }
-
  ?>
